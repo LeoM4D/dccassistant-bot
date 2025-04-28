@@ -1,5 +1,4 @@
 app = "dccassistant-bot"
-
 primary_region = "syd"
 
 [build]
@@ -19,3 +18,6 @@ min_machines_running = 1
 
   [[services.ports]]
   port = 443
+
+[processes]
+app = "gunicorn -b 0.0.0.0:8080 bot:app"
