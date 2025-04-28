@@ -22,4 +22,4 @@ min_machines_running = 1
   port = 443
 
 [processes]
-web = "python3 bot.py"
+web = "./entrypoint.sh"
