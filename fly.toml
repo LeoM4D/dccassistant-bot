@@ -1,4 +1,5 @@
 app = "dccassistant-bot"
+
 primary_region = "syd"
 
 [build]
@@ -18,7 +19,3 @@ min_machines_running = 1
 
   [[services.ports]]
   port = 443
-
-[processes]
-app = "python3 bot.py"
-
